@@ -4,9 +4,10 @@ body{margin-top:20px;
     background-color:#f5f7fa;
     color:#69707a;
     }
+    
     .btn-confirm{
         float: right !important;
-        width:100px;
+        width:120px;
         background: #FA7D09;
         color: white;
         margin-top: 2%;

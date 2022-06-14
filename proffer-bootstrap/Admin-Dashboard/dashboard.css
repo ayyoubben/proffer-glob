@@ -10,7 +10,6 @@ body{margin-top:20px;
         
         color: white;
     }
-
     .card-header:first-child {
         border-radius: 0.35rem 0.35rem 0 0;
     }
@@ -93,4 +92,34 @@ body{margin-top:20px;
     }
     .btn-search{
         background-color:rgb(250, 125, 9) !important;
+    }
+
+    .fa-angle-down{
+        color: #FF4301;
+    }
+    p{
+        margin-left: 2%;
+        margin-top: 0.4%;
+    }
+    .nested {
+        display: none;
+      }
+      
+      .active {
+        display: block;
+      }
+      .fa-angle-down:focus {
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Safari */
+        transform: rotate(90deg);  
+      }
+      ul{
+        list-style-type: none;
+        margin-left: 0%;
+        padding: 0%;
+    }
+      ul > ul{
+        list-style-type: none;
+        margin-left: 1.5%;
+        padding: 0%;
     }

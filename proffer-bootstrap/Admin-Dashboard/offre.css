@@ -7,12 +7,11 @@ body{margin-top:20px;
 
     .btn-confirm{
         float: right !important;
-        width:100px;
+        width:120px;
         background: #FA7D09;
         color: white;
         margin-top: 2%;
-    
-    
+        
          /* Chrome 10-25, Safari 5.1-6 */
          background: -webkit-linear-gradient(to right, rgb(250, 125, 9), rgb(255, 67, 1));
           
@@ -129,4 +128,4 @@ body{margin-top:20px;
         height: 20px  !important;
         color: #69707a
       }
-      
+
