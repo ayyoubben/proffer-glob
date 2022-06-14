@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function enable_disable() { 
+            $("#Pinfo :input").prop("disabled", function(i, v) { return !v; });
+            $( "#btn1").toggle();
+            $("#btnSave").toggleClass('d-none');
+            $("#btnSave").toggleClass('d-inline-block');
+            $("#btnUndo").toggleClass('d-none');
+            $("#btnUndo").toggleClass('d-inline-block');
+            $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+            })
+            
+        }
+    </script>
+    <div class="container-xl px-4 mt-4">
+        <!-- Account page navigation-->
+        <nav class="nav nav-borders">
+            <a class="nav-link active " data-bs-toggle="tab" href="#profile">Profile</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#soumissions">Soumissions</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#security">Securité</a>
+            <!--a class="nav-link" href=""  target="__blank">Notifications</a-->
+        </nav>
+        <hr class="mt-0 mb-4">
+        <div class="tab-content">
+            <!--------profile----------->
+            <div id="profile" class="container tab-pane fade show active">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <!-- Profile details card-->
+                        <div class="card mb-4 mb-xl-0">
+                            <div class="card-header color-custom-1">Informations générales</div>
+                            <div class="card-body text-center">
+                                <form id="Pinfo">
+                                    <div class="mb-3">
+                                        <label class="small mb-1" style="margin-right: 100% !important;" for="inputUsername">Nom</label>
+                                        <input class="form-control" id="inputUsername" type="text" placeholder="Entrez votre nom" value="Meddah" disabled="disabled">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="small mb-1" style="margin-right: 100% !important;" for="inputFirstName">Prénom</label>
+                                        <input class="form-control" id="inputFirstName" type="text" placeholder="Entrez votre prenom" value="Hafsa" disabled="disabled">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="small mb-1" style="margin-right: 100% !important;" for="inputEmail">Email</label>
+                                        <input class="form-control" id="inputEmail" type="email" placeholder="Entrez votre adresse Email" value="h.meddah@esi-sba.dz" disabled="disabled">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="small mb-1" style="margin-right: 100% !important;" for="inputAdresse">Adresse</label>
+                                        <input class="form-control" id="inputAdresse" type="text" placeholder="Entrez votre adresse" value="Campus cite 5 (hell) - Sidi Bel Abbès" disabled="disabled">
+                                    </div> 
+                                    <div class="mb-3">
+                                        <label class=" col-md-6 mb-1" style="margin-right: 100% !important;" for="inputNum">N° de Téléphone</label>
+                                        <input class="form-control" id="inputNum" type="tel" placeholder="Entrez votre Numero de Telephone" value="555-123-4567" disabled="disabled">
+                                    </div>
+                                </form>
+                                <button class="btn color-custom-1" id="btn1" type="button" onclick="enable_disable()">Modifier</button>  
+                                <button class="btn d-none" id="btnUndo" type="button" style="color:gray !important; border-color: darkgrey;" onclick="enable_disable()">Annuler</button> 
+                                <button class="btn d-none color-custom-1 " id="btnSave" type="button">Enregistrer</button>  
+                            </div>          
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <!-- entreprise details card-->
+                        <div class="card mb-4">
+                            <div class="card-header color-custom-2">Informations d’entreprise</div>
+                            <div class="card-body">
+                                <form>
+                                    <!-- Form Row-->
+                                    <div class="row gx-3 mb-3">
+                                        <!-- Form Group (name)-->
+                                        <div class="col-md-6">
+                                            <label class="small mb-1" for="inputName">Nom</label>
+                                            <input class="form-control" id="inputName" type="text" placeholder="Entez le nom de votre entreprise" value="ESi" disabled="disabled">
+                                            
+                                        </div>
+                                        <!-- Form Group (type)-->
+                                        <div class="col-md-6">
+                                            <label class="small mb-1" for="inputType">Type</label>
+                                            <input class="form-control" id="inputType" type="text" placeholder="Entez le type d'entreprise" value="Emotional torture" disabled="disabled">
+                                        </div>
+                                    </div>
+                                    <!-- Form Row        -->
+                                    <div class="row gx-3 mb-3">
+                                        <!-- Form Group (registre)-->
+                                        <div class="col-md-6">
+                                            <label class="small mb-1" for="inputOrgName">N° de registre</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" id="inputOrgName" placeholder="Entrez votre N° de registre" aria-label="Entrez votre N° de registre" aria-describedby="basic-addon2" value="700000023" disabled="disabled">
+                                                <div class="input-group-append">
+                                                <button class="btn color-custom-2 btn-sm" style="height:48px; width:48px" type="button"  data-bs-toggle="modal" data-bs-target="#registreModal"><img src="view.png" style="height:23px; width:22px; position:center"/></button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Form Group (qualification)-->
+                                        <div class="col-md-6">
+                                            <label class="small mb-1" for="inputQualification">Qualification</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" id="inputQualification" type="text" placeholder="Entez votre Qualification" value="idk make up sth" aria-label="Entez votre Qualification" aria-describedby="basic-addon2" disabled="disabled">
+                                                <div class="input-group-append">
+                                                <button class="btn color-custom-2 btn-sm" style="height:48px; width:48px" type="button" data-bs-toggle="modal" data-bs-target="#qualificationModal"><img src="view.png" style="height:23px; width:22px; position:center"/></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Form Group (codes)-->
+                                    <div class="mb-3">
+                                        <label class="small mb-1" for="inputCodes">Codes</label>
+                                        <input class="form-control" id="inputCodes" type="text" placeholder="Entez vos codes" value="Code1, Code2, Code3 ..." disabled="disabled">
+                                    </div>
+                                    <!-- Form Row-->
+                                    <div class="row gx-3 mb-3">
+                                        <!-- Form Group (nif)-->
+                                        <div class="col-md-6">
+                                            <label class="small mb-1" for="inputNIF">NIF</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" id="inputNIF" type="text" placeholder="Entez votre numero d'identification Fiscal" value="idk sum number" aria-label="Entez votre numero d'identification Fiscal" aria-describedby="basic-addon2" disabled="disabled">
+                                                <div class="input-group-append">
+                                                <button class="btn color-custom-2 btn-sm" style="height:48px; width:48px" type="button" data-bs-toggle="modal" data-bs-target="#nifModal"><img src="view.png" style="height:23px; width:22px; position:center"/></button>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        <!-- Form Group (nis))-->
+                                        <div class="col-md-6">
+                                            <label class="small mb-1" for="inputNIS">NIS</label>
+                                            
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" id="inputNIS" type="text" placeholder="Entez votre numero d'identification statique" value="idk sum other numberr" aria-label="Entez votre numero d'identification Statique" aria-describedby="basic-addon2" disabled="disabled">
+                                                <div class="input-group-append">
+                                                <button class="btn color-custom-2 btn-sm" style="height:48px; width:48px" type="button" data-bs-toggle="modal" data-bs-target="#nisModal"><img src="view.png" style="height:23px; width:22px; position:center"/></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Form Row-->
+                                    <div class="row gx-3 mb-3">
+                                        <!-- Form Group (casnos)-->
+                                        <div class="col-md-6">
+                                            <label class="small mb-1" for="inputCASNOS">CASNOS</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" id="inputCASNOS" type="text" placeholder="Entez votre numero de CASNOS" value="yet another number" aria-label="Entez votre numero de CASNOS" aria-describedby="basic-addon2" disabled="disabled">  
+                                                <div class="input-group-append">
+                                                <button class="btn color-custom-2 btn-sm" style="height:48px; width:48px" type="button" data-bs-toggle="modal" data-bs-target="#casnosModal"><img src="view.png" style="height:23px; width:22px; position:center"/></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Form Group (cacopath)-->
+                                        <div class="col-md-6">
+                                            <label class="small mb-1" for="inputCACOPATH">CACOPATH</label>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" id="inputCACOPATH" type="text" placeholder="Entez votre numero de CACOPATH" value="you guessed it, Yet another number" aria-label="Entez votre numero de CACOPATH" aria-describedby="basic-addon2" disabled="disabled">
+                                                <div class="input-group-append">
+                                                <button class="btn color-custom-2 btn-sm" style="height:48px; width:48px" type="button" data-bs-toggle="modal" data-bs-target="#cacopathModal"><img src="view.png" style="height:23px; width:22px; position:center"/></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- edit btn-->
+                                    <button class="btn color-custom-2" type="button">Modifier</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--------security----------->
+            <div id="security" class="container tab-pane fade">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <!-- Change password card-->
+                        <div class="card mb-4">
+                            <div class="card-header color-custom-2">Changer le mot de passe</div>
+                            <div class="card-body">
+                                <form>
+                                    <!-- Form Group (current password)-->
+                                    <div class="mb-3">
+                                        <label class="small mb-1" for="currentPassword">Mode de passe actuel</label>
+                                        <input class="form-control" id="currentPassword" type="password" placeholder="Entez votre mot de passe">
+                                    </div>
+                                    <!-- Form Group (new password)-->
+                                    <div class="mb-3">
+                                        <label class="small mb-1" for="newPassword">Nouveau mot de passe</label>
+                                        <input class="form-control" id="newPassword" type="password" placeholder="Entez votre nouveau mot de passe">
+                                    </div>
+                                    <!-- Form Group (confirm password)-->
+                                    <div class="mb-3">
+                                        <label class="small mb-1" for="confirmPassword">Confirmer le mot de passe</label>
+                                        <input class="form-control" id="confirmPassword" type="password" placeholder="confirmer votre nouveau mot de passe">
+                                    </div>
+                                    <button class="btn color-custom-2" type="button">Enregistrer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <!-- Delete account card-->
+                        <div class="card mb-4">
+                            <div class="card-header" style="background-color: #cc0000">Supprimer le compte</div>
+                            <div class="card-body">
+                                <p>La suppression de votre compte est une action permanente et ne peut pas être annulée. Si vous êtes sûr que vous voulez supprimer votre compte, sélectionnez le bouton ci-dessous.</p>
+                                <button class="btn btn-danger-soft text-danger" type="button">Je comprends, supprimer mon compte.</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----soumissions-->
+            <div id="soumissions" class="container tab-pane fade">
+            <p>nothing yet...</p>
+            </div>
+        </div>
+            <!-----------------------MODALS----------------------------->
+                <!-- Modal de registre -->
+        <div class="modal fade" id="registreModal" tabindex="-1" aria-labelledby="registreModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registre de commerce</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="test.pdf#toolbar=0" frameborder="0" width="100%" height="400px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de qualification-->
+        <div class="modal fade" id="qualificationModal" tabindex="-1" aria-labelledby="qualificationModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Qualification</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="test.pdf#toolbar=0" frameborder="0" width="100%" height="400px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de NIF -->
+        <div class="modal fade" id="nifModal" tabindex="-1" aria-labelledby="nifModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">NIF</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="test.pdf#toolbar=0" frameborder="0" width="100%" height="400px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de NIS -->
+        <div class="modal fade" id="nisModal" tabindex="-1" aria-labelledby="nisModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">NIS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="test.pdf#toolbar=0" frameborder="0" width="100%" height="400px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de CASNOS -->
+        <div class="modal fade" id="casnosModal" tabindex="-1" aria-labelledby="casnosModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">CASNOS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="test.pdf#toolbar=0" frameborder="0" width="100%" height="400px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal de CACOPATH -->
+        <div class="modal fade" id="cacopathModal" tabindex="-1" aria-labelledby="cacopathModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">CACOPATH</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="test.pdf#toolbar=0" frameborder="0" width="100%" height="400px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
