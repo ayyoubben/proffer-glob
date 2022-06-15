@@ -4,7 +4,7 @@ body{margin-top:20px;
     background-color:#f5f7fa;
     color:#69707a;
     }
-    
+
     .btn-confirm{
         float: right !important;
         width:120px;
@@ -134,4 +134,20 @@ body{margin-top:20px;
       }
       .card-body{
         padding-left: 8%;
+      }
+      .color-custom-2 {
+        /* fallback for old browsers */
+        background: #2F2519;
+        color: white;
+        text-align: center;
+      
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, rgba(255, 67, 1, 0.5), rgb(47, 37, 25));
+      
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, rgb(74, 63, 53), rgb(47, 37, 25));
+        
+      }
+      label{
+        float: left;
       }

@@ -27,61 +27,96 @@
         </a>
       </div>
         <!-- add offer-->
-        
-        <div class="card mb-4 justify-content-center ">
-          <div class="card-header" >
-            <h1 style="color: #69707a !important;">Nouveau lot</h1>
-          </div>
-            <div class="card-body">
-              
-                <!-- Form Row-->
-                <div class="row gx-3 mb-3">
-                    <!-- Form Group (name)-->
-                    <div class="col-md-5 mb-3">
-                        <label class="small mb-1" for="inputName">Nom</label>
-                        <input class="form-control" id="inputName" type="text" placeholder="Entez le nom de votre lot">
-                        
-                    </div>
-                    <!-- Form Group (d-day)-->
-                    <div class="col-md-5 offset-md-1">
-                        <label class="small mb-1" for="inputType">Classification</label>
-                        <input class="form-control" id="inputType" type="text" placeholder="Entez la classification du lot">
-                    </div>
-                </div>
-                <div class="row gx-3 mb-3">
-                    <!-- Form Group (name)-->
-                    <div class="col-md-5 mb-3">
-                        <label class="small mb-1" for="inputName">Nombre de salaires</label>
-                        <input class="form-control" id="inputName" type="text" placeholder="Entez le nombre de salaire">
-                        
-                    </div>
-                    <!-- Form Group (d-day)-->
-                    <div class="col-md-5 offset-md-1">
-                        <label class="small mb-1" for="inputType">Nombre de materiels</label>
-                        <input class="form-control" id="inputType" type="text" placeholder="Entez le nombre de materiels">
-                    </div>
-                </div>
-                <div class="row gx-3 mb-3">
-                    <!-- Form Group (name)-->
-                    <div class="col-md-5 mb-3">
-                        <label class="small mb-1" for="inputName">Prix Min</label>
-                        <input class="form-control" id="inputName" type="text" placeholder="Entez le prix minimal">
-                        
-                    </div>
-                    <!-- Form Group (d-day)-->
-                    <div class="col-md-5 offset-md-1">
-                        <label class="small mb-1" for="inputType">Prix Max</label>
-                        <input class="form-control" id="inputType" type="text" placeholder="Entez le prix maximal">
-                    </div>
-                </div>
-
-             
-                <!-- edit btn-->
-                <button class="btn btn-confirm" type="button">Enregister</button>
+        <div class="row">
+          <div class="card mb-4 col-xl-7 justify-content-center ">
+            <div class="card-header" >
+              <h1 style="color: #69707a !important; text-align: center;">Nouveau lot</h1>
             </div>
-            
-            
+              <div class="card-body">
+                
+                  <!-- Form Row-->
+                  <div class="row gx-3 mb-3">
+                      <!-- Form Group (name)-->
+                      <div class="col-md-5 mb-3">
+                          <label class="small mb-1" for="inputName">Nom</label>
+                          <input class="form-control" id="inputName" type="text" placeholder="Entez le nom de votre lot">
+                          
+                      </div>
+                      <!-- Form Group (d-day)-->
+                      <div class="col-md-5 offset-md-1">
+                          <label class="small mb-1" for="inputType">Classification</label>
+                          <input class="form-control" id="inputType" type="text" placeholder="Entez la classification du lot">
+                      </div>
+                  </div>
+                  <div class="row gx-3 mb-3">
+                      <!-- Form Group (name)-->
+                      <div class="col-md-5 mb-3">
+                          <label class="small mb-1" for="inputName">Nombre de salaires</label>
+                          <input class="form-control" id="inputName" type="text" placeholder="Entez le nombre de salaire">
+                          
+                      </div>
+                      <!-- Form Group (d-day)-->
+                      <div class="col-md-5 offset-md-1">
+                          <label class="small mb-1" for="inputType">Nombre de materiels</label>
+                          <input class="form-control" id="inputType" type="text" placeholder="Entez le nombre de materiels">
+                      </div>
+                  </div>
+                  <div class="row gx-3 mb-3">
+                      <!-- Form Group (name)-->
+                      <div class="col-md-5 mb-3">
+                          <label class="small mb-1" for="inputName">Prix Min</label>
+                          <input class="form-control" id="inputName" type="text" placeholder="Entez le prix minimal">
+                          
+                      </div>
+                      <!-- Form Group (d-day)-->
+                      <div class="col-md-5 offset-md-1">
+                          <label class="small mb-1" for="inputType">Prix Max</label>
+                          <input class="form-control" id="inputType" type="text" placeholder="Entez le prix maximal">
+                      </div>
+                  </div>
 
+              
+                  <!-- edit btn-->
+                  <button class="btn btn-confirm" type="button">Enregister</button>
+              </div>
+              
+              
+
+          </div>
+
+          <div class="card mb-4 col-xl-4 offset-1">
+            <div class="card-header" >
+              <h1 style="color: #69707a !important; text-align: center;">Barrem</h1>
+            </div>
+            <div class="card-body text-center">
+                <form id="Pinfo">
+                    <div class="mb-3">
+                        <label class="small mb-1" for="inputUsername">Classification</label>
+                        <input class="form-control" id="inputUsername" type="text" placeholder="Entrez le score de la classification">
+                    </div>
+                    <div class="mb-3">
+                        <label class="small mb-1" for="inputFirstName">Nombre de materiels</label>
+                        <input class="form-control" id="inputFirstName" type="text" placeholder="Entrez le score du nombre de materiels">
+                    </div>
+                    <div class="mb-3">
+                        <label class="small mb-1" for="inputEmail">Nombre de salaires</label>
+                        <input class="form-control" id="inputEmail" type="email" placeholder="Entrez le score du nombre de salaires">
+                    </div>
+                    <div class="mb-3">
+                        <label class="small mb-1" for="inputAdresse">Prix</label>
+                        <input class="form-control" id="inputAdresse" type="text" placeholder="Entrez le score du prix">
+                    </div> 
+                    <div class="mb-3">
+                        <label class="small mb-1" for="inputNum">Dernier Delai</label>
+                        <input class="form-control" id="inputNum" type="tel" placeholder="Entrez le score du dernier delai">
+                    </div>
+                </form>
+                <button class="btn color-custom-2" type="button">Enregister</button>  
+                <button class="btn d-none" id="btnUndo" type="button" style="color:gray !important; border-color: darkgrey;" onclick="enable_disable()">Annuler</button> 
+                <button class="btn d-none color-custom-1 " id="btnSave" type="button">Enregistrer</button>  
+            </div>          
+        </div>
+          
         </div>
     </div>
 
