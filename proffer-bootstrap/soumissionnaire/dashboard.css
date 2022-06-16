@@ -44,7 +44,7 @@ body{margin-top:20px;
         border-radius: 0.35rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     }
-        .btn1{
+        .btn{
             background-color: #FA7D09;
             color: white;
         }
@@ -120,7 +120,7 @@ body{margin-top:20px;
         outline: 0 none;
       }
       
-      .btn1:focus {
+      .btn:focus {
         border-color: #FA7D09;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(250, 125, 9, 0.8);
         outline: 0 none;

@@ -95,3 +95,10 @@ class GetPrixView(APIView):
             else:
                 return Response('Uncorrect price value')
         
+class SoumissionGetByOffreAndUser(generics.ListAPIView):
+    serializer_class = SoumissionSerializer
+    def get_queryset(self):
+        userId = self.kwargs['soumissionnaire']
+        offreId = self.kwargs['offre']
+        soumi = Soumission.objects.filter(soumissionnaire=userId, offre=offreId)
+        return soumi

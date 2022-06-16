@@ -7,8 +7,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/1f7b564301.js" crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
     <title>Document</title>
@@ -31,15 +36,200 @@
     <div class="container-xl px-4 mt-4">
         <!-- Account page navigation-->
         <nav class="nav nav-borders">
-            <a class="nav-link active " data-bs-toggle="tab" href="#profile">Profile</a>
-            <a class="nav-link" data-bs-toggle="tab" href="#soumissions">Soumissions</a>
-            <a class="nav-link" data-bs-toggle="tab" href="#security">Securité</a>
-            <!--a class="nav-link" href=""  target="__blank">Notifications</a-->
+            <a class="navlink nav-link active " data-bs-toggle="tab" href="#offres">Home</a>
+            <a class="tab " >
+                <a class=" nav-link tab-toggle " data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false" role="button" id="navbarDropdownMenuLink">Profile</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <ul class="nav " role="tablist">
+                        <li><a class="navlink nav-link" data-bs-toggle="tab" href="#profile">Profile</a></li>
+                        <li><a class="navlink nav-link" data-bs-toggle="tab" href="#soumissions">Soumissions</a></li>
+                        <li><a class="navlink nav-link" data-bs-toggle="tab" href="#security">Securité</a></li>
+                        <li><a class="navlink nav-link" data-bs-toggle="tab" href="#notifications">Notifications</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a class="navlink nav-link" data-bs-toggle="tab" href="#contact">Contact</a>
+            <!--a class="nav-link" href=""  target="__blank">NotifHoications</a-->
         </nav>
         <hr class="mt-0 mb-4">
         <div class="tab-content">
             <!--------profile----------->
-            <div id="profile" class="container tab-pane fade show active">
+            <div id="offres" class="container tab-pane fade show active">
+                <div class="container box">
+                    <div  class="row">
+                        <div class="col-sm-6">
+                          <div class="card mt-5">
+                            <div class="card-body">
+                              <h2 class="card-title mb-1">Offre 1 </h2>
+                              <p>2022-06-15</p>  
+                              <a href="#" class="btn1 btn">Consulter</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="card mt-5">
+                            <div class="card-body">
+                              <h2 class="card-title mb-1">Offre 2</h2>
+                              <p>2022-06-15</p> 
+                              <a href="#" class="btn1 btn">Consulter</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="card mt-5 ">
+                            <div class="card-body">
+                              <h2 class="card-title mb-1">Offre 3</h2>
+                              <p>2022-06-15</p> 
+                              <a href="#" class="btn1 btn">Consulter</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="card mt-5">
+                            <div class="card-body">
+                              <h2 class="card-title mb-1">Offre 4</h2>
+                              <p>2022-06-15</p> 
+                              <a href="#" class="btn1 btn">Consulter</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div id="contact" class="container tab-pane fade ">
+                <p>nothing yet...</p>
+                </div>
+            <!-----notifications-->
+            <div id="notifications" class="container tab-pane fade ">
+                <div class="container">
+                    <div class="main-body">
+                    
+                    
+                          <div class="row gutters-sm d-flex justify-content-center">
+                            
+                            <div class="col-md-8 ">
+                              <div class="card mb-3">
+                                <div class="card-body">
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">Nom</h6>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <div class="row">
+                                        <p class="col-10 mb-0 text-secondary">ce champs est invalide! veuillez verfier</p>
+                                        <i style= "color:#FF4301;" class="fa-solid fa-circle-exclamation fa-xl pt-2 mb-0 col-2"></i>
+                                      </div> 
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">Type</h6>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <div class="row">
+                                        <p class="col-10 mb-0 text-secondary">ce champs est invalide! veuillez verfier</p>
+                                        <i style= "color:#FF4301;" class="fa-solid fa-circle-exclamation fa-xl pt-2 mb-0 col-2"></i>
+                                      </div> 
+                                    </div> 
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">N° de registre</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                      <div class= "row">
+                                        <p class="col-10 mb-0 text-secondary">ce champs est valide</p>
+                                        <i style="color:#4A3F35" class="fa-solid fa-xl pt-2 fa-circle-check mb-0 col-2"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">Qualification</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                      <div class= "row">
+                                        <p class="col-10 mb-0 text-secondary">ce champs est valide</p>
+                                        <i style="color:#4A3F35" class="fa-solid fa-xl pt-2 fa-circle-check mb-0 col-2"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">Codes</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                      <div class= "row">
+                                        <p class="col-10 mb-0 text-secondary">ce champs est valide</p>
+                                        <i style="color:#4A3F35" class="fa-solid fa-xl pt-2 fa-circle-check mb-0 col-2"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">NIF</h6>
+                                    </div>
+                                    <div class="col-sm-9">
+                                      <div class="row">
+                                        <p class="col-10 mb-0 text-secondary">ce champs est invalide! veuillez verfier</p>
+                                        <i style= "color:#FF4301;" class="fa-solid fa-circle-exclamation fa-xl pt-2 mb-0 col-2"></i>
+                                      </div> 
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">NIS</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                      <div class= "row">
+                                        <p class="col-10 mb-0 text-secondary">ce champs est valide</p>
+                                        <i style="color:#4A3F35" class="fa-solid fa-xl pt-2 fa-circle-check mb-0 col-2"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">CASNOS</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                      <div class= "row">
+                                        <p class="col-10 mb-0 text-secondary">ce champs est valide</p>
+                                        <i style="color:#4A3F35" class="fa-solid fa-xl pt-2 fa-circle-check mb-0 col-2"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <hr>
+                                  <div class="row">
+                                    <div class="col-sm-3">
+                                      <h6 class="mb-0">CACOBAPTH</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                      <div class= "row">
+                                        <p class="col-10 mb-0 text-secondary">ce champs est valide</p>
+                                        <i style="color:#4A3F35" class="fa-solid fa-xl pt-2 fa-circle-check mb-0 col-2"></i>
+                                      </div>
+                                    </div>
+                                    
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div id="profile" class="container tab-pane fade">
                 <div class="row">
                     <div class="col-xl-4">
                         <!-- Profile details card-->
@@ -224,7 +414,74 @@
 
             <!-----soumissions-->
             <div id="soumissions" class="container tab-pane fade">
-            <p>nothing yet...</p>
+                <div id="validations" class="container tab-pane fade show active">
+                    <div class="grey-bg container-fluid">
+                        <section id="minimal-statistics">
+                          <div class="row">
+                            <div class="col-12 mt-3 mb-1">
+                              <h4 class="text-uppercase">Demandes de Validation:</h4>
+                              <p>do your work or you'll be fired</p>
+                              <div class="row justify-content-end mb-4">
+                                <div class="input-group">
+                                  <div class="form-outline">
+                                    <input type="search" id="form1" class="form-control" placeholder="Search..."/>
+                                  </div>
+                                  <button type="button" class="btn btn-search">
+                                    <i class="fas fa-search"></i>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            
+                          </div>
+                    
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-xl-12 col-md-12">
+                            <div class="card">
+                              <div class="card-content">
+                                <div class="card-body cleartfix">
+                                  <div class="media align-items-stretch">
+                                    <div class="align-self-center">
+                                      <h5 class="mr-4">Company 1</h5>
+                                    </div>
+                                    <div class="media-body" >
+                                      <p>Request date: 22/05/2022</p>
+                                    </div>
+                                    <div class="align-self-center">
+                                      <a href="#"><i class="icon-book-open font-medium-2 float-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <div class="row d-flex justify-content-center">
+                          <div class="col-xl-12 col-md-12" >
+                            <div class="card">
+                              <div class="card-content">
+                                <div class="card-body cleartfix">
+                                  <div class="media align-items-stretch">
+                                    <div class="align-self-center">
+                                      <h5 class="mr-4">Company 2</h5>
+                                    </div>
+                                    <div class="media-body">
+                                      <p>Request date: 24/05/2022</p>
+                                    </div>
+                                    <div class="align-self-center">
+                                      <a href="./Validation.html"><i class="icon-book-open font-medium-2 float-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                      </div>
+                </div>
             </div>
         </div>
             <!-----------------------MODALS----------------------------->

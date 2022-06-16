@@ -10,6 +10,7 @@ urlpatterns = [
     re_path(r'^soumission/offre/(?P<offre>[^/]+)/$', views.SoumissionGetByOffreView.as_view()),
     re_path(r'^soumission/user/(?P<soumissionnaire>[^/]+)/$', views.SoumissionGetBySoumissionnaireView.as_view()),
     re_path(r'^soumission/lot/(?P<lot>[^/]+)/$', views.SoumissionGetByLotView.as_view()),
+    re_path(r'^soumission/useroffre/(?P<offre>[^/]+)/(?P<soumissionnaire>[^/]+)/$', views.SoumissionGetByOffreAndUser.as_view()),
     re_path(r'^soumission/getPrix/(?P<soumission>[^/]+)/(?P<prix>[^/]+)/$', views.GetPrixView.as_view())
 
 ]
