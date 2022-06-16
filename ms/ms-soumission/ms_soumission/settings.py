@@ -19,7 +19,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR),
 )
 
-STATIC_URL = ''
+STATIC_URL = '/'
 
 # Application definition
 
