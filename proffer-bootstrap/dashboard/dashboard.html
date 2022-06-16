@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="dashboard.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -414,74 +416,44 @@
 
             <!-----soumissions-->
             <div id="soumissions" class="container tab-pane fade">
-                <div id="validations" class="container tab-pane fade show active">
-                    <div class="grey-bg container-fluid">
-                        <section id="minimal-statistics">
-                          <div class="row">
-                            <div class="col-12 mt-3 mb-1">
-                              <h4 class="text-uppercase">Demandes de Validation:</h4>
-                              <p>do your work or you'll be fired</p>
-                              <div class="row justify-content-end mb-4">
-                                <div class="input-group">
-                                  <div class="form-outline">
-                                    <input type="search" id="form1" class="form-control" placeholder="Search..."/>
-                                  </div>
-                                  <button type="button" class="btn btn-search">
-                                    <i class="fas fa-search"></i>
-                                  </button>
-                                </div>
-                              </div>
+                <div class="grey-bg container-fluid">
+                    <div class="row"  id="minimal-statistics">
+                     
+                          <h4 class="text-uppercase">Vos soumissions:</h4>
+                          <p>vous trouverez ici tous vos soumissions</p>
+                     
+                          
+                      <a data-bs-toggle="collapse" class="mb-3" href="#offre1" role="button" aria-expanded="false" aria-controls="offre1">
+                        <h4> Offre 01 ▽</h4>
+                      </a>
+                        <div class="collapse col-lg-12 mb-3" id="offre1">
+                        <div class="card card-body col-lg-12 mb-3 ">
+                            <div class="">
+                                <h5 class="mr-4">Lot 1</h5>
                             </div>
-                            
-                            
-                          </div>
-                    
-                        <div class="row d-flex justify-content-center">
-                          <div class="col-xl-12 col-md-12">
-                            <div class="card">
-                              <div class="card-content">
-                                <div class="card-body cleartfix">
-                                  <div class="media align-items-stretch">
-                                    <div class="align-self-center">
-                                      <h5 class="mr-4">Company 1</h5>
-                                    </div>
-                                    <div class="media-body" >
-                                      <p>Request date: 22/05/2022</p>
-                                    </div>
-                                    <div class="align-self-center">
-                                      <a href="#"><i class="icon-book-open font-medium-2 float-right"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                            <button class="btn1 btn col-lg-2 btn"> Details</button>                    
                         </div>
-                    
-                        <div class="row d-flex justify-content-center">
-                          <div class="col-xl-12 col-md-12" >
-                            <div class="card">
-                              <div class="card-content">
-                                <div class="card-body cleartfix">
-                                  <div class="media align-items-stretch">
-                                    <div class="align-self-center">
-                                      <h5 class="mr-4">Company 2</h5>
-                                    </div>
-                                    <div class="media-body">
-                                      <p>Request date: 24/05/2022</p>
-                                    </div>
-                                    <div class="align-self-center">
-                                      <a href="./Validation.html"><i class="icon-book-open font-medium-2 float-right"></i></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                        <div class="card card-body col-lg-12 pl-5">
+                            <div class="">
+                                <h5 class="mr-4">Lot 2</h5>
                             </div>
-                          </div>
+                            <button class="btn1 btn col-lg-2 btn"> Details</button>                    
                         </div>
-                      </section>
                       </div>
-                </div>
+                      <a data-bs-toggle="collapse" href="#offre2" role="button" aria-expanded="false" aria-controls="offre2">
+                        <h4> Offre 02 ▽</h4>
+                      </a>
+                      <div class="collapse col-lg-12 " id="offre2">
+                        <div class="card card-body col-lg-12 mb-3">
+                            <div class="">
+                                <h5 class="mr-4">Lot 1</h5>
+                            </div>
+                            <button class="btn1 btn col-lg-2 btn"> Details</button>                    
+                        </div>
+                        
+                      </div>
+                    </div>
+                </div>     
             </div>
         </div>
             <!-----------------------MODALS----------------------------->

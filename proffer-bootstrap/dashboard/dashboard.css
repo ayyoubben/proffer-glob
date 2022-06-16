@@ -17,6 +17,16 @@ body{margin-top:20px;
         
         color: white;
     }
+    ul{
+        list-style-type: none;
+        margin-left: 0%;
+        padding: 0%;
+    }
+      ul > ul{
+        list-style-type: none;
+        margin-left: 1.5%;
+        padding: 0%;
+    }
 
     .card-header:first-child {
         border-radius: 0.35rem 0.35rem 0 0;
@@ -131,4 +141,11 @@ body{margin-top:20px;
         background-position: center center;
     }
     
-    
+    a{
+        text-decoration: none;
+        color: #2F2519;
+    }
+
+    a:hover{
+        color:#FA7D09
+    }
