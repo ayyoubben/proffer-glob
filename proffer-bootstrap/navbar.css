@@ -1,0 +1,26 @@
+.gradient-custom-1 {
+    /* fallback for old browsers */
+    background: #FA7D09;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(255, 67, 1, 0.5), rgba(47, 37, 25, 0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(255, 67, 1, 0.5), rgba(47, 37, 25, 0.5));
+  }
+.brown {
+  background-color: #2F2519 !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.img-fluid {
+  max-width: 20%;
+  height: auto; 
+  /* Adjust accordingly */ 
+}
+.bg-dark{
+  background-color: #2F2519 !important;
+}
